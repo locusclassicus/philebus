@@ -1,0 +1,30 @@
+project:
+  type: website
+
+website:
+  title: "\"Филеб\" Платона"
+  navbar:
+    background: primary
+    search: true
+    left:
+      - href: index.qmd
+        text: Текст и переводы
+      - comments.qmd
+      - video.qmd
+      - bib.qmd
+      - about.qmd
+
+format:
+  html:
+    theme: journal
+    css: styles.css
+    mainfont: Noto Sans
+    fontsize: "14pt"
+    toc: true
+    toc-location: left
+    toc-title: Страницы
+    page-layout: full
+    grid:
+      sidebar-width: 150px
+
+bibliography: references.bib

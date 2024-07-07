@@ -1,0 +1,6 @@
+/* css styles */
+
+.output {
+max-height: 700px;
+overflow-y: scroll;
+}
