@@ -1,7 +1,0 @@
----
-title: "Видео"
----
-
-## 11a-12b
-
-{{< video https://youtu.be/oWBo7n5h3ng?si=lpzKIA7iCi3g5xJf title="11a-12b" width = "500" height="300" CERN = "11a-12b" >}}
