@@ -1,0 +1,26 @@
+
+```{=html}
+<iframe src="https://vkvideo.ru/video_ext.php?oid=-211800158&id=456239389" width="426" height="240" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+
+<iframe src="https://vkvideo.ru/video_ext.php?oid=-211800158&id=456239390" width="426" height="240" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+
+<iframe src="https://vkvideo.ru/video_ext.php?oid=-211800158&id=456239391" width="426" height="240" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+
+<iframe src="https://vkvideo.ru/video_ext.php?oid=-211800158&id=456239395" width="426" height="240" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+
+<iframe src="https://vkvideo.ru/video_ext.php?oid=-211800158&id=456239396" width="426" height="240" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+
+<iframe src="https://vkvideo.ru/video_ext.php?oid=-211800158&id=456239397" width="426" height="240" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+
+<iframe src="https://vkvideo.ru/video_ext.php?oid=-211800158&id=456239398" width="426" height="240" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+
+<iframe src="https://vkvideo.ru/video_ext.php?oid=-211800158&id=456239399" width="426" height="240" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+
+<iframe src="https://vkvideo.ru/video_ext.php?oid=-211800158&id=456239400" width="426" height="240" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+
+<iframe src="https://vkvideo.ru/video_ext.php?oid=-211800158&id=456239089&hd=2" width="426" height="240" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+
+<iframe src="https://vkvideo.ru/video_ext.php?oid=-211800158&id=456239090&hd=2" width="426" height="240" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+```
+
+

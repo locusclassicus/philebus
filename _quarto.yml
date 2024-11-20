@@ -3,23 +3,27 @@ project:
   output-dir: docs
 
 website:
-  title: "\"Филеб\" Платона"
+  title: "«Филеб»‎ Платона"
   navbar:
     background: primary
     search: true
     left:
       - href: index.qmd
         text: Текст
-      - translation.qmd
-      - comments.qmd
-      - video.qmd
+      - href: translation.qmd
+        text: Перевод
+      - href: comments.qmd
+        text: Комментарии
+      - href: video.qmd
+        text: Видео
       - bib.qmd
       - about.qmd
 
 format:
   html:
-    theme: lumen
-    css: styles.css
+    theme: 
+     - lumen
+     - custom.scss
     fontsize: "14pt"
     fontcolor: "#555555"
     toc: true
@@ -27,6 +31,6 @@ format:
     toc-title: Страницы
     page-layout: full
     grid:
-      sidebar-width: 150px
+      sidebar-width: 250px
 
 bibliography: references.bib
