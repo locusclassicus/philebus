@@ -16,13 +16,15 @@ website:
         text: Комментарии
       - href: video.qmd
         text: Видео
+      - href: codices.qmd
+        text: Рукописи
       - bib.qmd
       - about.qmd
 
 format:
   html:
     theme: 
-     - lumen
+     - sandstone
      - custom.scss
     fontsize: "14pt"
     fontcolor: "#555555"

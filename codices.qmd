@@ -1,0 +1,45 @@
+
+
+```{r echo=FALSE, message=FALSE}
+library(readxl)
+library(tidyverse)
+library(gt)
+codices <- read_xlsx("codices.xlsx")
+```
+
+```{r echo=FALSE}
+tbl_data <- codices |>
+  mutate(название = sprintf("[%s](%s)", название, url)) |>  
+  mutate(сокращение = sprintf(
+      "<span title='%s' style='border-bottom: 1px dotted black;'><strong>%s</strong></span>",  
+      комментарии,  
+      сокращение)
+    ) |> 
+  mutate(семейство = paste0("семейство: ", семейство)) |> 
+  select(-url, -комментарии) 
+```
+
+```{r echo=FALSE}
+tbl_data |> 
+  gt(groupname_col = 'семейство') |>
+  fmt_markdown(columns = c(название, сокращение)) |> 
+  tab_style(
+    style = cell_text(weight = "bold"), 
+    locations = cells_column_labels() 
+  ) |> 
+  opt_stylize(style = 2, color = 'blue') |> 
+  tab_header(
+    title = 'Рукописи тетралогий I-II',
+    subtitle = 'Источник: Duke E.A. et al. Platonis Opera. Oxford, 1995'
+  ) |> 
+  tab_style(
+    style = cell_fill("white"),
+    locations = cells_body()
+  ) |> 
+  tab_style(
+    style = cell_fill("grey90"),
+    locations = cells_row_groups()
+  )
+  
+```
+
