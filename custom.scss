@@ -1,15 +1,99 @@
 /*-- scss:rules --*/
 
-.anchored {
-    color: #168CBA;
-    font-weight: normal;
-    }
-    
-.label {
-  color: #168CBA;
-}
+// ==========================================
+// 1. ОБЩИЕ СТИЛИ САЙТА И ТЕКСТА
+// ==========================================
 
 p {
   text-align: justify;
 }
 
+// Заголовки h1, h2, h3, h4, h5, h6
+h1, h2, h3, h4, h5, h6, .h3 {
+  color: #168CBA !important;
+  font-weight: normal;
+}
+
+// Специфические якоря Quarto и кастомные метки
+.anchored, .label {
+  color: #168CBA !important;
+  font-weight: normal;
+}
+
+// ==========================================
+// 2. ИСПРАВЛЕНИЕ ЗЕЛЕНЫХ ССЫЛОК И БОКОВОГО МЕНЮ (SANDSTONE)
+// ==========================================
+
+// Обычные ссылки в тексте страницы (например, "Комментарий к 11a-12b")
+a {
+  color: #168CBA;
+  
+  &:hover {
+    color: #0f6282;
+  }
+}
+
+// Левое меню (TOC / "Страницы"): убираем дефолтный зеленый у активного пункта
+#quarto-sidebar, .toc-actions, .sidebar {
+  a.active, .active > a {
+    color: #168CBA !important; 
+    border-left-color: #168CBA !important; // Синий маркер слева в меню
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: #0f6282 !important;
+  }
+}
+
+// ==========================================
+// 3. СТИЛИЗАЦИЯ ТАБЛИЦ (GT) ПОД СТИЛЬ SANDSTONE
+// ==========================================
+
+/* Контейнер таблицы */
+.gt_table {
+  font-family: inherit !important;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100% !important;
+  border-collapse: collapse !important;
+}
+
+/* Заголовки столбцов таблицы */
+.gt_col_heading {
+  background-color: transparent !important;
+  border-top: none !important;
+  border-bottom: 2px solid #dfd7ca !important; /* Теплый серый из Sandstone */
+  padding: 12px 10px !important;
+}
+
+/* Сноски источника */
+.gt_sourcenote {
+  border-top: none !important;
+}
+
+/* Чередование строк (зебра) */
+.gt_table tbody tr:nth-child(even) {
+  background-color: #fcfbfa !important; /* Мягкий бежевый оттенок */
+}
+
+/* Строки-группы (семейства рукописей) */
+.gt_group_heading {
+  background-color: #f8f5f0 !important; /* Светло-бежевая плашка */
+  border-top: 1px solid #dfd7ca !important;
+  border-bottom: 1px solid #dfd7ca !important;
+  color: #3e3f3a !important;
+  padding: 10px !important;
+}
+
+/* Ссылки внутри самой таблицы */
+.gt_table td a {
+  color: #168CBA !important;
+  text-decoration: none !important;
+  border-bottom: 1px dashed #168CBA;
+  
+  &:hover {
+    color: #0f6282 !important;
+    border-bottom-style: solid;
+  }
+}

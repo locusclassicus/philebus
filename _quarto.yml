@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: docs
+  render: [ "*.qmd", "!Readme.md", "!Readme.Rmd" ]
 
 website:
   title: "«Филеб»‎ Платона"
@@ -13,13 +14,16 @@ website:
       - href: translation.qmd
         text: Перевод
       - href: comments.qmd
-        text: Комментарии
-      - href: video.qmd
-        text: Видео
+        text: Комментарии 
+      - href: questions.qmd
+        text: Вопросы
+      - href: resources.qmd
+        text: Ресурсы
       - href: codices.qmd
-        text: Рукописи
+        text: Рукописи 
+      - href: about.qmd
+        text: О проекте
       - bib.qmd
-      - about.qmd
 
 format:
   html:

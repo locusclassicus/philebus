@@ -16,30 +16,35 @@ tbl_data <- codices |>
       сокращение)
     ) |> 
   mutate(семейство = paste0("семейство: ", семейство)) |> 
-  select(-url, -комментарии) 
+  select(-url, -комментарии, -содержание) 
 ```
 
 ```{r echo=FALSE}
 tbl_data |> 
   gt(groupname_col = 'семейство') |>
   fmt_markdown(columns = c(название, сокращение)) |> 
-  tab_style(
-    style = cell_text(weight = "bold"), 
-    locations = cells_column_labels() 
-  ) |> 
-  opt_stylize(style = 2, color = 'blue') |> 
   tab_header(
     title = 'Рукописи тетралогий I-II',
     subtitle = 'Источник: Duke E.A. et al. Platonis Opera. Oxford, 1995'
   ) |> 
+  # Минималистичная базовая разметка без жестко зашитых цветов
+  opt_stylize(style = 1, color = 'gray') |> 
+  # Устанавливаем шрифты, соответствующие сайту
   tab_style(
-    style = cell_fill("white"),
-    locations = cells_body()
+    style = cell_text(weight = "bold", color = "#3e3f3a"),
+    locations = cells_column_labels()
   ) |> 
   tab_style(
-    style = cell_fill("grey90"),
+    style = cell_text(weight = "bold", color = "#3e3f3a"),
     locations = cells_row_groups()
   )
-  
+
+
 ```
+
+
+::: {.callout-note icon=false appearance="simple"}
+*Раздел находится в разработке.*
+:::
+
 
