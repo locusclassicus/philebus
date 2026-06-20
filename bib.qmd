@@ -1,5 +1,7 @@
 ---
 title: "Библиография"
+nocite: |
+  @*
 ---
 
 ::: {.callout-note icon=false appearance="simple"}

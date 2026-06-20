@@ -13,10 +13,10 @@ website:
         text: Текст
       - href: translation.qmd
         text: Перевод
+      - href: intro.qmd
+        text: Введение
       - href: comments.qmd
         text: Комментарии 
-      - href: questions.qmd
-        text: Вопросы
       - href: resources.qmd
         text: Ресурсы
       - href: codices.qmd
