@@ -1,0 +1,8 @@
+abbreviation,name,library,origin,century,date,url,contents
+B,Codex Oxoniensis Clarkianus 39,Bodleian Library,Patmos,9th century,895,"https://digital.bodleian.ox.ac.uk/objects/f57d074b-cff1-4172-8236-797c7b8f0403",Tetralogies 1-6
+A,Codex Parisinus graecus 1807,Bibliothèque nationale de France,,circa 900 AD,,"",Tetralogies 8-9 and Spuria
+T,Codex Marcianus Append. Class. 4.1,Biblioteca Marciana,,10th century,circa 950,"https://www.internetculturale.it/jmms/iccuviewer/iccu.jsp?id=oai%3A193.206.197.121%3A18%3AVE0049%3ACSTOR.241.10700&mode=all&teca=marciana",Tetralogies 1-7 and part of 8
+F,Codex Vindobonensis suppl. phil. gr. 39,Austrian National Library,,13th century,,"",From Tetralogy VI.3 (Gorgias) to IX.1 (Minos)
+W,Codex Vindobonensis suppl. phil. gr. 7,Austrian National Library,,13th century,,"",Tetralogies 1-6
+P,Codex Vaticanus Palatinus 173,Vatican Library,,unknown,,,"",Partial
+S,Codex Venetus Marcianus 189,Biblioteca Marciana,,unknown,,,Partial

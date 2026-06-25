@@ -4,7 +4,7 @@
 library(readxl)
 library(tidyverse)
 library(gt)
-codices <- read_xlsx("codices.xlsx")
+codices <- read_xlsx("../files/codices.xlsx")
 ```
 
 ```{r echo=FALSE}

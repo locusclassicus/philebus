@@ -1,29 +1,30 @@
 project:
   type: website
   output-dir: docs
-  render: [ "*.qmd", "!Readme.md", "!Readme.Rmd" ]
-
+  render: 
+   - "book/*.qmd"
+   
 website:
   title: "«Филеб»‎ Платона"
   navbar:
     background: primary
     search: true
     left:
-      - href: index.qmd
+      - href: book/index.qmd
         text: Текст
-      - href: translation.qmd
+      - href: book/translation.qmd
         text: Перевод
-      - href: intro.qmd
+      - href: book/intro.qmd
         text: Введение
-      - href: comments.qmd
+      - href: book/comments.qmd
         text: Комментарии 
-      - href: resources.qmd
+      - href: book/resources.qmd
         text: Ресурсы
-      - href: codices.qmd
+      - href: book/codices.qmd
         text: Рукописи 
-      - href: about.qmd
+      - href: book/about.qmd
         text: О проекте
-      - bib.qmd
+      - book/bib.qmd
 
 format:
   html:
