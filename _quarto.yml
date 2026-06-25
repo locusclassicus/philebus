@@ -25,6 +25,7 @@ website:
       - href: book/about.qmd
         text: О проекте
       - book/bib.qmd
+    
 
 format:
   html:

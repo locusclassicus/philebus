@@ -1,4 +1,18 @@
 
-::: {.callout-note icon=false appearance="simple"}
-*Раздел находится в разработке.*
+::: {.callout-note icon="false" appearance="simple"}
+*Раздел дорабатывается. Это предварительная версия.*
 :::
+
+
+```{r echo=FALSE}
+date <- format(Sys.Date(), "%d.%m.%Y")
+version <- system("git rev-parse --short HEAD", intern = TRUE)
+```
+
+
+Для цитирования: 
+
+Алиева О.В. _«Филеб» Платона: комментарии и перевод_. Версия: **`r version`** от **`r date`**. URL: <https://locusclassicus.github.io/philebus/>
+
+
+В 2024-2025 г. исследование проводилось за счет гранта Российского научного фонда № 24-28-00222, [https://rscf.ru/project/24-28-00222/](https://rscf.ru/project/24-28-00222/)
