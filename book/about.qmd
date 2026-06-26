@@ -12,7 +12,6 @@ version <- system("git rev-parse --short HEAD", intern = TRUE)
 
 Для цитирования: 
 
-Алиева О.В. _«Филеб» Платона: комментарии и перевод_. Версия: **`r version`** от **`r date`**. URL: <https://locusclassicus.github.io/philebus/>
+Алиева О.В. _«Филеб» Платона: перевод и комментарии_. Версия: **`r version`** от **`r date`**. URL: <https://locusclassicus.github.io/philebus/>
 
 
-В 2024-2025 г. исследование проводилось за счет гранта Российского научного фонда № 24-28-00222, [https://rscf.ru/project/24-28-00222/](https://rscf.ru/project/24-28-00222/)
