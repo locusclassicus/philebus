@@ -1,61 +1,140 @@
 /*-- scss:defaults --*/
-$font-family-sans-serif: "Noto Serif", Georgia, "Times New Roman", serif !default;
-$headings-font-family:   "Noto Serif", Georgia, serif !default;
-$line-height-base:       1.7 !default;
+
+// Читающий текст — серифная гарнитура (хорошо поддерживает
+// политонический греческий, кириллицу и латиницу).
+$font-family-serif: "Noto Serif", Georgia, "Times New Roman", serif !default;
+
+// UI и навигация — отдельная, более лёгкая рубленая гарнитура,
+// чтобы не спорить по насыщенности с основным текстом.
+$font-family-sans-serif: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !default;
+
+$font-family-base: $font-family-serif !default;
+// Заголовки — на том же сансе, что навбар и TOC: так навигационная
+// структура сайта визуально отделена от читающего текста диалога
+$headings-font-family: $font-family-sans-serif !default;
+$headings-font-weight: 600 !default;
+$line-height-base: 1.65 !default;
+
+// Litera по умолчанию довольно крупный — слегка уменьшаем базовый
+// размер, все заголовки/отступы пересчитаются от него пропорционально
+$font-size-base: 0.95rem !default;
+
+// Приглушённая, тёплая графитовая палитра вместо чистого чёрного/белого
+$body-color: #33322f !default;
+$body-bg: #fdfcfa !default;
+$headings-color: #232220 !default;
+
+// Единственный акцентный цвет сайта — приглушённый сине-зелёный,
+// используется ТОЛЬКО для ссылок, цитат и активных пунктов меню
+$link-color: #3e6d7a !default;
+$link-hover-color: #2c4f58 !default;
 
 /*-- scss:rules --*/
 
 // ==========================================
-// 1. ОБЩИЕ СТИЛИ САЙТА И ТЕКСТА
+// 0. ШРИФТЫ ПОДКЛЮЧЕНЫ ЧЕРЕЗ include-in-header в _quarto.yml
+//    (Noto Serif + Noto Sans, см. комментарий там)
 // ==========================================
 
+body {
+  font-family: $font-family-serif;
+  font-weight: 400;
+}
+
+// Навигация, TOC-заголовки и прочий UI — на лёгком сансе,
+// это и даёт визуальный контраст с текстом диалога
+.navbar, #quarto-sidebar, #TOC, .sidebar, .breadcrumb, .quarto-title-banner {
+  font-family: $font-family-sans-serif;
+}
+
+// Sandstone по умолчанию красит текст навбара в белый (расчёт на тёмную
+// плашку). Раз мы поставили светлый фон (background: light в _quarto.yml),
+// принудительно возвращаем тёмный/акцентный текст, иначе он "исчезает".
+.navbar {
+  background-color: #fdfcfa !important;
+  border-bottom: 1px solid #e4ded2;
+
+  .navbar-brand,
+  .navbar-nav .nav-link,
+  .navbar-title {
+    color: $headings-color !important;
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active,
+  .navbar-brand:hover {
+    color: $link-color !important;
+  }
+
+  // Иконка "гамбургера" на мобильных — тоже была нарисована белым
+  .navbar-toggler-icon {
+    filter: invert(1) grayscale(1) brightness(0.3);
+  }
+
+  // Иконка поиска в навбаре
+  .aa-DetachedSearchButton, .quarto-search-icon, .search-icon {
+    color: $headings-color !important;
+  }
+}
+
+// ==========================================
+// 1. ОБЩИЕ СТИЛИ САЙТА И ТЕКСТА
+// ==========================================
 p {
   text-align: justify;
 }
 
-// Заголовки h1, h2, h3, h4, h5, h6
 h1, h2, h3, h4, h5, h6, .h3 {
-  color: #168CBA !important;
-  font-weight: normal;
+  color: $headings-color;
+  font-weight: $headings-font-weight;
+  letter-spacing: -0.01em;
 }
 
-// Специфические якоря Quarto и кастомные метки
 .anchored, .label {
-  color: #168CBA !important;
-  font-weight: normal;
+  color: $headings-color;
+  font-weight: $headings-font-weight;
 }
 
 // ==========================================
-// 2. ИСПРАВЛЕНИЕ ЗЕЛЕНЫХ ССЫЛОК И БОКОВОГО МЕНЮ (SANDSTONE)
+// 2. ССЫЛКИ В ТЕКСТЕ
 // ==========================================
-
-// Обычные ссылки в тексте страницы (например, "Комментарий к 11a-12b")
 a {
-  color: #168CBA;
-  
+  color: $link-color;
+  text-decoration-color: rgba(62, 109, 122, 0.35);
+
   &:hover {
-    color: #0f6282;
+    color: $link-hover-color;
+    text-decoration-color: $link-hover-color;
   }
 }
 
-// Левое меню (TOC / "Страницы"): убираем дефолтный зеленый у активного пункта
+// ==========================================
+// 3. БОКОВОЕ МЕНЮ (TOC / "Страницы") — приглушено,
+//    чтобы не перетягивать внимание с текста
+// ==========================================
 #quarto-sidebar, .toc-actions, .sidebar {
-  a.active, .active > a {
-    color: #168CBA !important; 
-    border-left-color: #168CBA !important; // Синий маркер слева в меню
-    font-weight: bold;
+  font-size: 0.86rem;
+
+  a {
+    color: #918d85;
+    font-weight: 400;
+    transition: color .15s ease;
   }
-  
+
+  a.active, .active > a {
+    color: $link-color !important;
+    border-left-color: $link-color !important;
+    font-weight: 500; // было bold — сейчас чуть плотнее обычного, не жирный
+  }
+
   a:hover {
-    color: #0f6282 !important;
+    color: $link-hover-color !important;
   }
 }
 
 // ==========================================
-// 3. СТИЛИЗАЦИЯ ТАБЛИЦ (GT) ПОД СТИЛЬ SANDSTONE
+// 4. СТИЛИЗАЦИЯ ТАБЛИЦ (GT) ПОД НОВУЮ ПАЛИТРУ
 // ==========================================
-
-/* Контейнер таблицы */
 .gt_table {
   font-family: inherit !important;
   margin-top: 2rem;
@@ -64,62 +143,72 @@ a {
   border-collapse: collapse !important;
 }
 
-/* Заголовки столбцов таблицы */
 .gt_col_heading {
   background-color: transparent !important;
   border-top: none !important;
-  border-bottom: 2px solid #dfd7ca !important; /* Теплый серый из Sandstone */
+  border-bottom: 2px solid #e4ded2 !important;
   padding: 12px 10px !important;
+  font-family: $font-family-sans-serif;
+  font-weight: 500;
 }
 
-/* Сноски источника */
 .gt_sourcenote {
   border-top: none !important;
 }
 
-/* Чередование строк (зебра) */
 .gt_table tbody tr:nth-child(even) {
-  background-color: #fcfbfa !important; /* Мягкий бежевый оттенок */
+  background-color: #faf9f6 !important;
 }
 
-/* Строки-группы (семейства рукописей) */
 .gt_group_heading {
-  background-color: #f8f5f0 !important; /* Светло-бежевая плашка */
-  border-top: 1px solid #dfd7ca !important;
-  border-bottom: 1px solid #dfd7ca !important;
-  color: #3e3f3a !important;
+  background-color: #f5f2ec !important;
+  border-top: 1px solid #e4ded2 !important;
+  border-bottom: 1px solid #e4ded2 !important;
+  color: #4a4842 !important;
   padding: 10px !important;
+  font-family: $font-family-sans-serif;
 }
 
-/* Ссылки внутри самой таблицы */
 .gt_table td a {
-  color: #168CBA !important;
+  color: $link-color !important;
   text-decoration: none !important;
-  border-bottom: 1px dashed #168CBA;
-  
+  border-bottom: 1px dashed $link-color;
+
   &:hover {
-    color: #0f6282 !important;
+    color: $link-hover-color !important;
     border-bottom-style: solid;
   }
 }
 
 // ==========================================
-// 4. СТИЛИЗАЦИЯ ССЫЛОК НА ЛИТЕРАТУРУ (ЦИТАТ)
+// 5. КОЛЛАУТЫ ("Раздел дорабатывается" и т.п.) — тише и без
+//    "коробочности": тонкая полоса слева вместо рамки+тени+заливки
 // ==========================================
+.callout {
+  border: none !important;
+  border-left: 3px solid $link-color !important;
+  border-radius: 2px;
+  background-color: rgba(62, 109, 122, 0.05) !important;
+  box-shadow: none !important;
+}
 
-// Стилизация самой ссылки-цитаты (фамилия, год) в тексте
+.callout .callout-icon::before {
+  background-color: $link-color !important;
+}
+
+// ==========================================
+// 6. ССЫЛКИ НА ЛИТЕРАТУРУ (ЦИТАТЫ) — тише, без заливки в покое
+// ==========================================
 .citation, a[href^="#ref-"] {
-  color: #168CBA !important;          // Наш фирменный синий цвет
-  padding: 1px 5px;                   // Небольшие внутренние отступы, чтобы плашка смотрелась аккуратно
-  border-radius: 3px;                 // Легкое скругление углов плашки
-  transition: all 0.2s ease-in-out;   // Плавная анимация при наведении
-  text-decoration: none !important;    // Убираем стандартное подчеркивание
+  color: $link-color !important;
+  padding: 1px 4px;
+  border-radius: 3px;
+  text-decoration: none !important;
+  transition: all 0.15s ease-in-out;
 
-  // Эффект при наведении курсора
   &:hover {
-    color: #ffffff !important;         // Текст становится белым
-    background-color: #0f6282;        // Плашка темнеет до глубокого синего
+    color: #ffffff !important;
+    background-color: $link-color;
     text-decoration: none !important;
   }
 }
-
