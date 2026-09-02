@@ -29,6 +29,9 @@ website:
 format:
   html:
     theme: [sandstone, custom.scss]
+    crossref:
+      fig-title: "Рис."  
+      tbl-title: "Табл."
     include-in-header:
       text: |
         <link rel="preconnect" href="https://fonts.googleapis.com">
