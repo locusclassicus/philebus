@@ -47,3 +47,7 @@ format:
       margin-width: 280px
       gutter-width: 1.5rem
 bibliography: references.bib
+csl: philebus-author-date.csl
+citeproc: false
+filters:
+  - philebus-bibliography.lua
