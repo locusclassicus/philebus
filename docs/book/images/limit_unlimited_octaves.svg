@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="810" viewBox="0 0 1400 810" role="img">
+<title>Предел и беспредельное: музыкальный пример</title>
+<desc>Слева показана непрерывная звуковая область без выделенного интервала. Справа две пары звуков на разных высотах образуют октавы. Обе пары связаны отношением 2:1, обозначающим отношение большей и меньшей звучащих длин струны при неизменном натяжении. Высотное расстояние между звуками одинаково в обеих парах. Схема поясняет принятое в комментарии толкование предела, беспредельного и смешанного.</desc>
+<rect width="1400" height="810" fill="#fbfaf6"/>
+<defs><linearGradient id="continuum" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#246c72" stop-opacity="0"/><stop offset="0.15" stop-color="#246c72" stop-opacity="0.65"/><stop offset="0.85" stop-color="#246c72" stop-opacity="0.65"/><stop offset="1" stop-color="#246c72" stop-opacity="0"/></linearGradient></defs>
+<text x="65" y="69" font-family="Georgia, serif" font-size="44" fill="#24343b" text-anchor="start">Предел и беспредельное: музыкальный пример</text>
+<text x="245" y="148" font-family="Arial, sans-serif" font-size="29" fill="#246c72" text-anchor="middle">Беспредельное</text>
+<text x="940" y="148" font-family="Arial, sans-serif" font-size="29" fill="#246c72" text-anchor="middle">Смешанное</text>
+<text x="245" y="209" font-family="Arial, sans-serif" font-size="21" fill="#657078" text-anchor="middle">выше</text>
+<rect x="243.5" y="226" width="3" height="478" fill="url(#continuum)"/>
+<text x="245" y="736" font-family="Arial, sans-serif" font-size="21" fill="#657078" text-anchor="middle">ниже</text>
+<text x="720" y="209" font-family="Arial, sans-serif" font-size="21" fill="#657078" text-anchor="middle">выше</text>
+<rect x="718.5" y="226" width="3" height="478" fill="url(#continuum)"/>
+<text x="720" y="736" font-family="Arial, sans-serif" font-size="21" fill="#657078" text-anchor="middle">ниже</text>
+<text x="1110" y="209" font-family="Arial, sans-serif" font-size="21" fill="#657078" text-anchor="middle">выше</text>
+<rect x="1108.5" y="226" width="3" height="478" fill="url(#continuum)"/>
+<text x="1110" y="736" font-family="Arial, sans-serif" font-size="21" fill="#657078" text-anchor="middle">ниже</text>
+<line x1="732" y1="400" x2="774" y2="400" stroke="#b68136" stroke-width="2"/>
+<circle cx="720" cy="400" r="9" fill="#24343b"/>
+<line x1="732" y1="640" x2="774" y2="640" stroke="#b68136" stroke-width="2"/>
+<circle cx="720" cy="640" r="9" fill="#24343b"/>
+<line x1="774" y1="400" x2="774" y2="640" stroke="#b68136" stroke-width="2"/>
+<text x="798" y="508.0" font-family="Arial, sans-serif" font-size="22" fill="#657078" text-anchor="start">предел</text>
+<text x="798" y="549.0" font-family="Arial, sans-serif" font-size="36" fill="#b68136" text-anchor="start">2:1</text>
+<text x="720" y="780" font-family="Arial, sans-serif" font-size="25" fill="#24343b" text-anchor="middle">октава</text>
+<line x1="1122" y1="280" x2="1164" y2="280" stroke="#b68136" stroke-width="2"/>
+<circle cx="1110" cy="280" r="9" fill="#24343b"/>
+<line x1="1122" y1="520" x2="1164" y2="520" stroke="#b68136" stroke-width="2"/>
+<circle cx="1110" cy="520" r="9" fill="#24343b"/>
+<line x1="1164" y1="280" x2="1164" y2="520" stroke="#b68136" stroke-width="2"/>
+<text x="1188" y="388.0" font-family="Arial, sans-serif" font-size="22" fill="#657078" text-anchor="start">предел</text>
+<text x="1188" y="429.0" font-family="Arial, sans-serif" font-size="36" fill="#b68136" text-anchor="start">2:1</text>
+<text x="1110" y="780" font-family="Arial, sans-serif" font-size="25" fill="#24343b" text-anchor="middle">октава</text>
+</svg>
