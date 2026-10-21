@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="650" viewBox="0 0 1400 650" role="img"><title>Каркас октавы: 6–8–9–12</title><desc>Четыре неподвижных звука двух разделенных тетрахордов. Кварта 4:3, тон 9:8, кварта 4:3; вместе октава 2:1.</desc>
+<rect width="100%" height="100%" fill="#fbfaf6"/>
+<g transform="translate(0,-48)">
+<text x="65" y="116" font-family="Georgia, serif" font-size="44" font-weight="normal" fill="#24343b" text-anchor="start">Каркас октавы: 6–8–9–12</text>
+<text x="65" y="157" font-family="Arial, sans-serif" font-size="24" font-weight="normal" fill="#657078" text-anchor="start">Два тетрахорда разделены тоном. Их внутреннее членение здесь не задано.</text>
+<line x1="165.0" y1="232" x2="1235.0" y2="232" stroke="#24343b" stroke-width="2"/>
+<line x1="165.0" y1="232" x2="165.0" y2="242" stroke="#24343b" stroke-width="2"/>
+<line x1="1235.0" y1="232" x2="1235.0" y2="242" stroke="#24343b" stroke-width="2"/>
+<text x="700.0" y="220" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#24343b" text-anchor="middle">ОКТАВА  2:1</text>
+<line x1="165.0" y1="307" x2="609.0901242283628" y2="307" stroke="#246c72" stroke-width="2"/>
+<line x1="165.0" y1="307" x2="165.0" y2="317" stroke="#246c72" stroke-width="2"/>
+<line x1="609.0901242283628" y1="307" x2="609.0901242283628" y2="317" stroke="#246c72" stroke-width="2"/>
+<text x="387.0450621141814" y="295" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#246c72" text-anchor="middle">КВАРТА  4:3</text>
+<line x1="609.0901242283628" y1="307" x2="790.9098757716371" y2="307" stroke="#b68136" stroke-width="2"/>
+<line x1="609.0901242283628" y1="307" x2="609.0901242283628" y2="317" stroke="#b68136" stroke-width="2"/>
+<line x1="790.9098757716371" y1="307" x2="790.9098757716371" y2="317" stroke="#b68136" stroke-width="2"/>
+<text x="700.0" y="295" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#b68136" text-anchor="middle">ТОН  9:8</text>
+<line x1="790.9098757716371" y1="307" x2="1235.0" y2="307" stroke="#246c72" stroke-width="2"/>
+<line x1="790.9098757716371" y1="307" x2="790.9098757716371" y2="317" stroke="#246c72" stroke-width="2"/>
+<line x1="1235.0" y1="307" x2="1235.0" y2="317" stroke="#246c72" stroke-width="2"/>
+<text x="1012.9549378858185" y="295" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#246c72" text-anchor="middle">КВАРТА  4:3</text>
+<line x1="165.0" y1="350" x2="609.0901242283628" y2="350" stroke="#246c72" stroke-width="7"/>
+<line x1="609.0901242283628" y1="350" x2="790.9098757716371" y2="350" stroke="#b68136" stroke-width="7"/>
+<line x1="790.9098757716371" y1="350" x2="1235.0" y2="350" stroke="#246c72" stroke-width="7"/>
+<circle cx="165.0" cy="350" r="9" fill="#24343b"/>
+<text x="165.0" y="403" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#24343b" text-anchor="middle">6</text>
+<text x="165.0" y="440" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#24343b" text-anchor="middle">гипата</text>
+<text x="165.0" y="470" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#657078" text-anchor="middle">средних</text>
+<circle cx="609.0901242283628" cy="350" r="9" fill="#24343b"/>
+<text x="609.0901242283628" y="403" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#24343b" text-anchor="middle">8</text>
+<text x="609.0901242283628" y="440" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#24343b" text-anchor="middle">меса</text>
+<circle cx="790.9098757716371" cy="350" r="9" fill="#24343b"/>
+<text x="790.9098757716371" y="403" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#24343b" text-anchor="middle">9</text>
+<text x="790.9098757716371" y="440" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#24343b" text-anchor="middle">парамеса</text>
+<circle cx="1235.0" cy="350" r="9" fill="#24343b"/>
+<text x="1235.0" y="403" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#24343b" text-anchor="middle">12</text>
+<text x="1235.0" y="440" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#24343b" text-anchor="middle">нета</text>
+<text x="1235.0" y="470" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#657078" text-anchor="middle">отделённых</text>
+<line x1="165.0" y1="543" x2="790.9098757716371" y2="543" stroke="#a35442" stroke-width="2"/>
+<line x1="165.0" y1="543" x2="165.0" y2="553" stroke="#a35442" stroke-width="2"/>
+<line x1="790.9098757716371" y1="543" x2="790.9098757716371" y2="553" stroke="#a35442" stroke-width="2"/>
+<text x="477.95493788581854" y="531" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#a35442" text-anchor="middle">КВИНТА  3:2</text>
+<line x1="609.0901242283628" y1="610" x2="1235.0" y2="610" stroke="#a35442" stroke-width="2"/>
+<line x1="609.0901242283628" y1="610" x2="609.0901242283628" y2="620" stroke="#a35442" stroke-width="2"/>
+<line x1="1235.0" y1="610" x2="1235.0" y2="620" stroke="#a35442" stroke-width="2"/>
+<text x="922.0450621141814" y="598" font-family="Arial, sans-serif" font-size="23" font-weight="normal" fill="#a35442" text-anchor="middle">КВИНТА  3:2</text>
+<text x="700" y="663" font-family="Arial, sans-serif" font-size="20" font-weight="normal" fill="#657078" text-anchor="middle">Величины интервалов переданы расстояниями; более высокие звуки — справа.</text>
+</g></svg>
