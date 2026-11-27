@@ -212,3 +212,205 @@ a {
     text-decoration: none !important;
   }
 }
+
+// ==========================================
+// 7. ПАГИНАЦИЯ СТЕФАНА И ПЕРЕХОДЫ МЕЖДУ ТЕКСТАМИ
+// ==========================================
+
+main a.stephanus,
+main .milestone {
+  display: inline;
+  position: static;
+  font-family: $font-family-sans-serif;
+  font-size: 0.78em;
+  font-weight: 500;
+  line-height: inherit;
+  white-space: nowrap;
+  margin-inline-start: 0.3em;
+  margin-inline-end: 0.65em;
+  color: $link-color;
+  scroll-margin-top: 6rem;
+}
+
+// Русская метка — сама ссылка;
+// в греческом тексте ссылка находится внутри метки.
+main a.stephanus,
+main .milestone a {
+  color: $link-color;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba($link-color, 0.45);
+}
+
+main .milestone a {
+  font: inherit;
+}
+
+main a.stephanus:hover,
+main .milestone a:hover {
+  color: $link-hover-color;
+  background-color: rgba($link-color, 0.08);
+  border-bottom-color: $link-hover-color;
+}
+
+// Подсветка метки, к которой привела ссылка.
+main a.stephanus:target,
+main .milestone:target {
+  background-color: rgba($link-color, 0.12);
+  outline: 1px solid rgba($link-color, 0.5);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+// ==========================================
+// 8. РУКОПИСИ И ПАПИРУСЫ
+// Все правила ограничены контейнером .codices.
+// ==========================================
+
+.codices {
+  --codices-beta: #28666a;
+  --codices-x: #865b2e;
+  --codices-muted: #595f63;
+}
+
+.codices p {
+  line-height: 1.65;
+}
+
+.codices a {
+  text-underline-offset: .16em;
+}
+
+.codices a:focus-visible, .codices summary:focus-visible, .codices .table-scroll:focus-visible {
+  outline: 3px solid #28666a;
+  outline-offset: 4px;
+}
+
+.codices h2 {
+  margin-top: 2.5rem;
+}
+
+.codices h3 {
+  margin-top: 1.6rem;
+}
+
+.codices .codex {
+  border-top: 1px solid #d5d9d9;
+  padding: .2rem 0 1.1rem;
+}
+
+.codices .codex h3 {
+  margin-top: 1rem;
+  margin-bottom: .35rem;
+}
+
+.codices .codex-meta {
+  color: var(--codices-muted);
+  font-size: .9em;
+}
+
+.codices .codex-meta {
+  margin-top: 0;
+}
+
+.codices .siglum {
+  font-weight: 700;
+}
+
+.codices .beta {
+  color: var(--codices-beta);
+}
+
+.codices .stemma {
+  max-width: 580px;
+  margin: 1.5rem auto;
+}
+
+.codices .stemma svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.codices .stemma figcaption {
+  font-size: .9em;
+  color: var(--codices-muted);
+  text-align: left;
+  margin-top: .5rem;
+}
+
+.codices .table-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+  margin: 1rem 0;
+}
+
+.codices table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .9em;
+  line-height: 1.45;
+}
+
+.codices .sigla-table table {
+  min-width: 750px;
+}
+
+.codices .papyri-table table {
+  min-width: 620px;
+}
+
+.codices th, .codices td {
+  vertical-align: top;
+  text-align: left;
+  padding: .65rem .7rem;
+  border-bottom: 1px solid #d5d9d9;
+}
+
+.codices th {
+  font-family: system-ui, sans-serif;
+  font-size: .94em;
+  font-weight: 600;
+  background: #f1f4f3;
+  border-top: 1px solid #bdc7c5;
+}
+
+.codices tbody tr:nth-child(even) {
+  background: #f8faf9;
+}
+
+.codices details {
+  margin: .8rem 0;
+}
+
+.codices summary {
+  cursor: pointer;
+  font-family: system-ui, sans-serif;
+  font-size: .9em;
+  font-weight: 600;
+  padding: .35rem 0;
+}
+
+@media (max-width: 640px) {
+  .codices table {
+    font-size: .88em;
+  }
+  .codices th, .codices td {
+    padding: .55rem;
+  }
+}
+
+@media print {
+  .codices .table-scroll {
+    overflow: visible;
+  }
+  .codices table {
+    min-width: 0 !important;
+    font-size: 8pt;
+  }
+  .codices h2, .codices h3 {
+    break-after: avoid;
+  }
+  .codices tr {
+    break-inside: avoid;
+  }
+}

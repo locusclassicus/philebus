@@ -30,8 +30,10 @@ format:
   html:
     theme: [sandstone, custom.scss]
     crossref:
-      fig-title: "Рис."  
+      fig-title: "Рис."
+      fig-prefix: "рис."
       tbl-title: "Табл."
+      tbl-prefix: "табл."
     include-in-header:
       text: |
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,4 +52,5 @@ bibliography: references.bib
 csl: philebus-author-date.csl
 citeproc: false
 filters:
+  - quarto
   - philebus-bibliography.lua
